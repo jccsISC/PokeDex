@@ -6,4 +6,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="hp_background">#61681D</color>
+    <color name="attack_background">#3C401A</color>
+    <color name="defense_background">#00ACC1</color>
+    <color name="speed_background">#FDD835</color>
 </resources>
