@@ -33,14 +33,14 @@ class ListFragment : Fragment(R.layout.fragment_list) {
                     EnumsTypes.ELECTRIC
                 ),
                 PokemonModel(2, "Pichachu", "", 43, 50, 75, 50, EnumsTypes.ELECTRIC),
-                PokemonModel(3, "Pichachu", "", 43, 50, 75, 50, EnumsTypes.GRASS),
-                PokemonModel(4, "Pichachu", "", 43, 50, 75, 50, EnumsTypes.FIGTHER),
-                PokemonModel(5, "Pichachu", "", 43, 50, 75, 50, EnumsTypes.FIGTHER),
-                PokemonModel(6, "Pichachu", "", 43, 50, 75, 50, EnumsTypes.ELECTRIC),
-                PokemonModel(7, "Pichachu", "", 43, 50, 75, 50, EnumsTypes.ELECTRIC),
-                PokemonModel(8, "Pichachu", "", 43, 50, 75, 50, EnumsTypes.ELECTRIC),
-                PokemonModel(9, "Pichachu", "", 43, 50, 75, 50, EnumsTypes.ELECTRIC),
-                PokemonModel(10, "Pichachu", "", 43, 50, 75, 50, EnumsTypes.ELECTRIC)
+                PokemonModel(3, "Bulbasaur", "", 43, 50, 75, 50, EnumsTypes.GRASS),
+                PokemonModel(4, "Venusaur", "", 43, 50, 75, 50, EnumsTypes.FIGTHER),
+                PokemonModel(5, "Charmander", "", 43, 50, 75, 50, EnumsTypes.FIGTHER),
+                PokemonModel(6, "Charizard", "", 43, 50, 75, 50, EnumsTypes.ELECTRIC),
+                PokemonModel(7, "Squirtle", "", 43, 50, 75, 50, EnumsTypes.ELECTRIC),
+                PokemonModel(8, "Wartortle", "", 43, 50, 75, 50, EnumsTypes.ELECTRIC),
+                PokemonModel(9, "Pidgeot", "", 43, 50, 75, 50, EnumsTypes.ELECTRIC),
+                PokemonModel(10, "Rattata", "", 43, 50, 75, 50, EnumsTypes.ELECTRIC)
             )
 
             adapter.submitList(listPokemon)

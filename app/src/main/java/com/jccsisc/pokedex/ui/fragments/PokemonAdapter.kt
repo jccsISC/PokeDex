@@ -13,6 +13,7 @@ import com.jccsisc.pokedex.databinding.ItemListPokemonBinding
 
 class PokemonAdapter : ListAdapter<PokemonModel, PokemonAdapter.PokemonViewHolder>(DiffCallback) {
 
+    //lambda para el click
     lateinit var onClickListener: (PokemonModel) -> Unit
 
     //Hacemos uso de DiffCallback pa identificar que item se agregó o borró es lo mismo siempre
@@ -44,6 +45,7 @@ class PokemonAdapter : ListAdapter<PokemonModel, PokemonAdapter.PokemonViewHolde
             tvId.text = pokemonModel.id.toString()
             tvPokemon.text = pokemonModel.name
 
+            //pintar una imagen segun su  tipo
             val image = when (pokemonModel.type) {
                 EnumsTypes.GRASS -> R.drawable.ic_grass
                 EnumsTypes.FIRE -> R.drawable.ic_fire
@@ -54,6 +56,7 @@ class PokemonAdapter : ListAdapter<PokemonModel, PokemonAdapter.PokemonViewHolde
             imvType.setImageResource(image)
 
             root.setOnClickListener {
+                //verificar que esté inicializado
                 if (::onClickListener.isInitialized) {
                     onClickListener(pokemonModel)
                 }else Log.e("error", "No se inicializó el onClickLambda")
