@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:context=".ui.fragments.DetailsFragment">
 
@@ -37,7 +37,7 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/size_20"
                 android:textStyle="bold"
-                tools:text="HP 45" />
+                android:text="@string/hp" />
 
             <TextView
                 android:id="@+id/tvAttack"
@@ -51,7 +51,7 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/size_20"
                 android:textStyle="bold"
-                tools:text="Attack 48" />
+                android:text="@string/attack" />
         </LinearLayout>
 
         <LinearLayout
@@ -67,7 +67,7 @@
                 android:background="@color/defense_background"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:padding="@dimen/padding_10"
-                android:text="Defense 43"
+                android:text="@string/defense"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="@dimen/size_20"
@@ -81,7 +81,7 @@
                 android:background="@color/speed_background"
                 android:fontFamily="sans-serif-condensed-medium"
                 android:padding="@dimen/padding_10"
-                android:text="Attack 48"
+                android:text="@string/speed"
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="@dimen/size_20"
