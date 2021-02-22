@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity(), ListFragment.PokemonSelectListener {
         fragmentDetailsFragment =
             supportFragmentManager.findFragmentById(R.id.fragmentDetails) as DetailsFragment
 
+
     }
 
 

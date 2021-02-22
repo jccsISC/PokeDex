@@ -10,4 +10,5 @@
     <string name="hp">Hp:</string>
     <string name="defense">Defense:</string>
     <string name="speed">Speed:</string>
+    <string name="imagen_extraida_de_url">imagen extraida de url</string>
 </resources>

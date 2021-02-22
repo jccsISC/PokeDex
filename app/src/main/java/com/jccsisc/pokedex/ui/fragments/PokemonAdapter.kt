@@ -1,5 +1,6 @@
 package com.jccsisc.pokedex.ui.fragments
 
+import android.content.Context
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
