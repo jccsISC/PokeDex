@@ -1,6 +1,7 @@
 package com.jccsisc.pokedex.ui.fragments
 
 import android.graphics.drawable.Drawable
+import android.media.MediaPlayer
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
@@ -30,7 +31,7 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
 
             progress.visibility = View.VISIBLE
 
-            Picasso.get().load("no es nada").
+            Picasso.get().load("no es nada")
                 .fit()
                 .error(R.drawable.ic_error_image)
                 .error(R.drawable.ic_error_image)
@@ -41,6 +42,9 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
             tvAttack.text = getString(R.string.attack_format, pokemonModel.attack)
             tvDefense.text = getString(R.string.defense_format, pokemonModel.defense)
             tvSpeed.text = getString(R.string.speed_format, pokemonModel.speed)
+
+            val mediaPlayer = MediaPlayer.create(requireContext(), pokemonModel.soundId)
+            mediaPlayer.start()
         }
     }
 }

@@ -10,5 +10,6 @@ data class PokemonModel(
     val attack: Int,
     val defense: Int,
     val speed: Int,
-    val type: EnumsTypes
+    val type: EnumsTypes,
+    val soundId: Int
     )
