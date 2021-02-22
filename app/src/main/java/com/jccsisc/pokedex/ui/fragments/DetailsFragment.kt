@@ -29,9 +29,9 @@ class DetailsFragment : Fragment(R.layout.fragment_details) {
     fun setPokemonData(pokemonModel: PokemonModel) {
         bining.apply {
 
-            progress.visibility = View.VISIBLE
+//            progress.visibility = View.VISIBLE
 
-            Picasso.get().load("no es nada")
+            Picasso.get().load(pokemonModel.image)
                 .fit()
                 .error(R.drawable.ic_error_image)
                 .error(R.drawable.ic_error_image)
